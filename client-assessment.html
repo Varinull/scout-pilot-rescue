@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAA4JGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgICAgICAgICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNyAoV2luZG93cyk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMTYtMTItMDNUMDE6MDY6NTQtMDU6MDA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxNi0xMi0wM1QwMjozNjowMi0wNTowMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTYtMTItMDNUMDI6MzY6MDItMDU6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6Zjg4ODFjN2UtZjRlNy0xYzQxLWJkNWEtYWI2OGZiYTAwMzY4PC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOmY4ODgxYzdlLWY0ZTctMWM0MS1iZDVhLWFiNjhmYmEwMDM2ODwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD54bXAuZGlkOmY4ODgxYzdlLWY0ZTctMWM0MS1iZDVhLWFiNjhmYmEwMDM2ODwveG1wTU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0aW9uPmNyZWF0ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDpmODg4MWM3ZS1mNGU3LTFjNDEtYmQ1YS1hYjY4ZmJhMDAzNjg8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTYtMTItMDNUMDE6MDY6NTQtMDU6MDA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE3IChXaW5kb3dzKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOlNlcT4KICAgICAgICAgPC94bXBNTTpIaXN0b3J5PgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpYUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjcyMDAwMC8xMDAwMDwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT42NTUzNTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MzI8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+MzI8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/Po1KyCwAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAABCtJREFUeNrEl1tsFGUUx3/fzOylu/RCadrUVhOb0mLAWK0BUUlBN8hL1Vij0hgoCUy9+9AYMSZq9EXgAW8Jsn2oWnxQAvGhWEg0xZQWMGyKoYJJm5JUmnKRJrTddm8znw/d2ul2d7pTSTjJSSbfuf2/k3P5RkgpubOkh+C1C5wsrUXCUjhfwl4JIQm9El6RoNjaSPkfawAIhXGXbynwy4ATwGrL2XpgA/ByMp4tKSBBSvY+2IQpFKcA3kkJPkuNwIvZOJiJmIhw6u7H+OShnU6Cu4GnbeQvZA8AIB7mo0db2L3urWwBSCBuI485AyAlxMLsqd3FE/VBhnLLFrONAz/YyNudAQCQJiRidN2zgfUNh9hXs52o6rKz/wo4m+b8AHAsGwAC/VwGaC5w5bDuyhlaf/uY+8cGM/nwAG8CTwFTwHfAkXSK48XFjFZWUt3TkwWAWdJy8BgROjpeJTDy+5JGzcSKFYTq6xlcu5ao38/r27bNuV/UOjFN1JPLUF4ZjDgLHFm2jFONjQyvWcNUQQGuaBRXJGJTA5nINHCZCTuNTcA+YLP1cKy8nP6NG4n5fLinpxGmuTDB/3OQVwDvAjuTl9kM/AKYABfr6nDFYiiGMTf5df22AQgAh4ASy5lhbesAMBQMOmjD7OlDoCMlOEAPYJ7fsmXejVNvPS8D8mDt/L5sDqVVVKUJ4AW+BranK1eg7WJdHTWdnQuXbgYQCzKQBKQkgwlAIIQS1rwa8ClQDexKFp2VhsOFhX+cbWgQjnJp3c12fN9LR703vAV3Wfb65zN7NMlCfN/V1MQX7e0iW59yxtJGqJ+b+37jkvrIs99y05OHBFVCvxVA1Ofb1LZ/P06CSynti3BefSQiWl9RFVHVDfAAsMqieiGak9NtaprqtJqz6gLRHBKgaCVTN8mPTQI8D1iDHYn6/YmE260EW1ttfQaDQeEYgDxYKxFKrCA6gdeIkzrxgDNTy5cTd7slUi5WhKrjQSSaQwpuf1FhbHxUkUYJUGkRjwC9/5SXY2oaxGJmhpvPXthYwiASHkzD0C8dBXgGyLcIO4GJaxUVSCEWbUFd16VzAG7f9I4/D1/fOnhCTTOEOgBqjh+n+PJlDE1z2QQ3sy7CmcJL1sCXqxjz5glTKGXAwxa1KaAXoHRgoKr69Glfwu1WM6Q/+y5IN45PltbeO+7yr06+hq3LpxrYY6rqk6MrV04qhuHoV0sTzaFcwAeMpbxypWgOgRACX5Gn5a+fbuXHJ99Osc8FuoH3417vgWsVFaiJhDMAwESSU3KjgZYDRlTu6Psm8l5fW5WQMpCidQNomX0BJ/e+OZtyXddt05+hDSVoPkrCV3lu6FcaB37m8avnAbam9PAxYDfQbzN0ssrAgkdoYLibtq4PKA9ft0puAX8DV4DPgB9vx7+xuNO/5/8OAPiX/nDnm7w5AAAAAElFTkSuQmCC" />
+  <title>AI Workflow Failure-Mode Diagnostic & Pilot Rescue Navigator</title>
+  <style>
+        :root {
+      --bg: #0a0908;
+      --bg-elev: #111010;
+      --bg-card: #151312;
+      --bg-input: #0e0d0c;
+      --border: #2a2623;
+      --border-strong: #3d3630;
+      --text: #f0ece6;
+      --text-muted: #9c958e;
+      --accent: #f97316;
+      --accent-strong: #ea580c;
+      --accent-soft: rgba(249, 115, 22, 0.14);
+      --ok: #10b981;
+      --ok-soft: rgba(16, 185, 129, 0.13);
+      --warn: #f59e0b;
+      --warn-soft: rgba(245, 158, 11, 0.14);
+      --danger: #ef4444;
+      --danger-soft: rgba(239, 68, 68, 0.14);
+      --shadow: 0 12px 30px rgba(0, 0, 0, 0.42);
+      --mono: "Space Grotesk", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    html[data-theme="light"] {
+      --bg: #f4f1ea;
+      --bg-elev: #faf8f3;
+      --bg-card: #fcfbf8;
+      --bg-input: #efeae0;
+      --border: #d8d0c3;
+      --border-strong: #c2b8a8;
+      --text: #24201d;
+      --text-muted: #5c554e;
+      --accent: #d95b08;
+      --accent-strong: #b84a04;
+      --accent-soft: rgba(217, 91, 8, 0.1);
+      --ok: #059669;
+      --ok-soft: rgba(5, 150, 105, 0.1);
+      --warn: #b45309;
+      --warn-soft: rgba(180, 83, 9, 0.1);
+      --danger: #b91c1c;
+      --danger-soft: rgba(185, 28, 28, 0.09);
+      --shadow: 0 6px 20px rgba(36, 32, 29, 0.05);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-elev);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+    .topbar-inner {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 12px clamp(16px, 3vw, 48px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #6366f1);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      font-family: var(--mono);
+      font-size: 14px;
+    }
+    .brand-title {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+    }
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .trust-pill {
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--ok-soft);
+      color: var(--ok);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-weight: 600;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: clamp(18px, 2.5vw, 36px) clamp(16px, 3vw, 48px) 64px;
+    }
+
+    .demo-banner {
+      display: none;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: var(--warn-soft);
+      border: 1px solid var(--warn);
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .demo-banner.active { display: flex; }
+    .demo-banner-text { font-size: 13.5px; }
+    .demo-banner-text strong { color: var(--warn); }
+
+    .hero {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .hero h1 {
+      margin: 0 0 8px 0;
+      font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14.5px;
+      max-width: none;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .card-title {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .card-subtitle {
+      margin: 4px 0 0 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .btn {
+      cursor: pointer;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-elev);
+      color: var(--text);
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn-primary {
+      background: var(--accent-strong);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .btn-primary:hover { filter: brightness(1.08); }
+    .btn-sm { padding: 5px 10px; font-size: 12px; }
+
+    .scanner-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .scanner-bar input[type="text"] {
+      flex: 1 1 340px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg-input);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 13.5px;
+    }
+    textarea {
+      font-family: var(--mono);
+      font-size: 12px;
+      min-height: 112px;
+      resize: vertical;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 16px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+      gap: 14px;
+    }
+    .grid-2 > *, .grid-3 > *, .symptom-grid > *, .kpi-strip > *, .navigator-split > *, .guard-grid > *, .metrics-row > * {
+      min-width: 0;
+    }
+    .field label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .field .hint {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .check-tile {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--bg-input);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .check-tile:hover { border-color: var(--border-strong); }
+    .check-tile input { margin-top: 3px; accent-color: var(--accent); }
+
+    details.optional-box {
+      border: 1px dashed var(--border-strong);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-top: 16px;
+      background: var(--bg-input);
+    }
+    details.optional-box summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* Local Codebase Navigator Styles */
+    .scan-results {
+      display: none;
+      margin-top: 16px;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+    .scan-results.active { display: block; }
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .kpi-mini {
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 10px 12px;
+    }
+    .kpi-mini .num {
+      font-family: var(--mono);
+      font-size: 19px;
+      font-weight: 700;
+    }
+    .kpi-mini .lbl {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+    .navigator-split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 14px;
+    }
+    .file-list {
+      max-height: 340px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--bg-input);
+    }
+    .file-row {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 12.5px;
+    }
+    .file-row:last-child { border-bottom: none; }
+    .file-row:hover, .file-row.selected {
+      background: var(--accent-soft);
+    }
+    .file-path {
+      font-family: var(--mono);
+      word-break: break-all;
+    }
+    .file-detail {
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--bg-input);
+      padding: 14px 16px;
+      font-size: 13px;
+    }
+    .guard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+      gap: 8px;
+      margin: 10px 0;
+    }
+    .guard-chip {
+      padding: 6px 9px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-family: var(--mono);
+      border: 1px solid var(--border);
+    }
+    .guard-ok { background: var(--ok-soft); color: var(--ok); border-color: rgba(16, 185, 129, 0.3); }
+    .guard-miss { background: var(--danger-soft); color: var(--danger); border-color: rgba(239, 68, 68, 0.3); }
+
+    .badge {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+    .badge-CRITICAL { background: var(--danger-soft); color: var(--danger); border: 1px solid var(--danger); }
+    .badge-HIGH { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
+    .badge-MODERATE, .badge-ELEVATED { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .badge-LOW, .badge-HEALTHY, .badge-READY { background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok); }
+    .badge-ACTION_REQUIRED { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
+
+    /* Diagnostic Results */
+    #resultsSection { display: none; }
+    #resultsSection.active { display: block; }
+
+    .score-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px;
+      border-radius: 12px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-strong);
+      margin-bottom: 18px;
+    }
+    .score-circle {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: var(--mono);
+      font-size: 26px;
+      font-weight: 800;
+      border: 4px solid var(--accent);
+      background: var(--bg-card);
+    }
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .metric-box {
+      padding: 14px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-input);
+    }
+    .metric-box .m-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; font-weight: 600; }
+    .metric-box .m-val { font-family: var(--mono); font-size: 20px; font-weight: 700; margin-top: 4px; line-height: 1.25; }
+    .metric-box .m-val.is-text { font-family: var(--sans); font-size: 17px; }
+    .metric-box .m-sub {
+      margin-top: 7px;
+      padding-top: 6px;
+      border-top: 1px dashed var(--border);
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--text-muted);
+      font-family: var(--sans);
+      font-weight: 500;
+    }
+    .metric-box .m-sub div + div { margin-top: 2px; }
+
+    .tax-row { margin-bottom: 12px; }
+    .tax-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .bar-track {
+      height: 9px;
+      border-radius: 999px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--warn), var(--danger));
+    }
+
+    .finding-card {
+      padding: 15px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-input);
+      margin-bottom: 12px;
+    }
+    .finding-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .checklist-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .checklist-table th, .checklist-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .checklist-table th {
+      color: var(--text-muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .pull-card {
+      margin-top: 20px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border-strong);
+      background: linear-gradient(135deg, var(--accent-soft), transparent);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .pull-card p {
+      margin: 0;
+      font-size: 13.5px;
+      flex: 1 1 360px;
+      min-width: 0;
+      max-width: none;
+    }
+
+    .status-note {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    @media print {
+      .topbar, .no-print { display: none !important; }
+      body { background: #fff; color: #000; }
+      .card, .hero { box-shadow: none; border-color: #ccc; }
+    }
+  
+    /* === VARINULL BRAND & EASY-EYE THEME OVERRIDES === */
+    .vn-brand-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none !important;
+    }
+    .vn-wordmark-img {
+      height: 28px;
+      width: auto;
+      display: block;
+      background: transparent !important;
+      border: none !important;
+      user-select: none;
+    }
+    .vn-brand-sep {
+      width: 1px;
+      height: 24px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+    html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+    html[data-theme="light"] select,
+    html[data-theme="light"] textarea,
+    html[data-theme="light"] pre,
+    html[data-theme="light"] code {
+      background-color: #efeae0 !important;
+      color: #24201d !important;
+      border-color: #d6cebf !important;
+    }
+    html[data-theme="light"] .card,
+    html[data-theme="light"] section.card,
+    html[data-theme="light"] details {
+      background-color: #fcfbf8 !important;
+      border-color: #dcd5c9 !important;
+      box-shadow: 0 6px 20px rgba(36, 32, 29, 0.05) !important;
+    }
+    html[data-theme="light"] header,
+    html[data-theme="light"] .topbar {
+      background-color: #faf8f3 !important;
+      border-color: #dcd5c9 !important;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <a href="/" class="vn-brand-wrap" title="Varinull Home">
+          <img src="data:image/png;base64,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" alt="varinull" class="vn-wordmark-img" />
+        </a>
+        <span class="vn-brand-sep"></span>
+        <div>
+          <div class="brand-title">Scout #03: Stalled AI Pilot &amp; Workflow Check</div>
+          <div class="brand-sub">Private Self-Check on Your Computer</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="trust-pill">Runs on Your Computer • No Login Required</span>
+        <a id="modeSwitchLink" class="btn btn-sm" href="?mode=production" style="display:none;">Switch to Blank Form</a>
+        <button type="button" class="btn btn-sm" id="themeToggleBtn">Light / Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="demoBanner" class="demo-banner no-print">
+      <div class="demo-banner-text">
+        <strong>DEMO INSTANCE ACTIVE, Meridian Supply Co. (Stalled RFQ &amp; Order-Exception Copilot):</strong>
+        Sample 5-step prompt chain, uploaded error logs, raw database lookups, and silent webhook timeouts.
+        Demo runs are isolated and never stored in production submissions.
+      </div>
+      <a id="exitDemoBtn" class="btn btn-sm" href="/">Switch to Blank Check</a>
+    </div>
+
+    <section class="hero">
+      <div class="hero-eyebrow">Private Self-Check for AI Workflows &amp; Prototypes</div>
+      <h1>Find Out Why Your AI Pilot Breaks on Real-World Work</h1>
+      <p>
+        Combines a <strong>local file &amp; log check</strong> (scanning <code>.py</code>/<code>.ts</code>/<code>.js</code> code files for AI calls, format checks, and timeout/retry handling, plus <code>.jsonl</code>/<code>.csv</code> error logs) with a <strong>plain-English workflow checklist</strong>. Source code and prompts are never saved or uploaded.
+      </p>
+    </section>
+
+    <!-- STEP A: INTERACTIVE LOCAL AI CODEBASE & TRACE NAVIGATOR -->
+    <section class="card no-print">
+      <div class="card-header">
+        <div>
+          <h2 class="card-title">1. Check Your AI Pilot Folder or Error Logs <span class="status-note">(Optional)</span></h2>
+          <p class="card-subtitle">
+            Scans <code>.py</code>, <code>.ts</code>, <code>.js</code>, <code>.mjs</code>, <code>.json</code>, and <code>.jsonl</code> files on your computer for AI model calls,
+            output format checks, timeouts/retries, and logged errors without saving or uploading your code.
+          </p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="btn btn-sm" id="scanSampleBtn" style="display:none;">Scan Included Sample Pilot</button>
+          <label class="btn btn-sm" style="margin:0;">
+            Choose Folder from Computer
+            <input type="file" id="browserFolderPicker" webkitdirectory directory multiple style="display:none;" />
+          </label>
+        </div>
+      </div>
+
+      <div class="scanner-bar">
+        <input
+          type="text"
+          id="localScanPathInput"
+          placeholder="Enter local folder path (e.g. C:\projects\my-ai-pilot)"
+        />
+        <button type="button" class="btn btn-primary" id="runLocalScanBtn">Scan Folder Path</button>
+      </div>
+      <div id="scanStatusMsg" class="status-note"></div>
+
+      <div id="scanResultsContainer" class="scan-results">
+        <div class="kpi-strip" id="scanKpiStrip"></div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:10px;">
+          <div style="display:flex; gap:6px; flex-wrap:wrap;" id="scanFilterButtons">
+            <button type="button" class="btn btn-sm" data-filter="all">All Checked Files</button>
+            <button type="button" class="btn btn-sm" data-filter="llm">AI Calls</button>
+            <button type="button" class="btn btn-sm" data-filter="hotspots">Missing Safeguards</button>
+            <button type="button" class="btn btn-sm" data-filter="traces">Error Logs</button>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" id="applyScanToFormBtn">
+            Use Scanned Findings &amp; Calculate Score ↓
+          </button>
+        </div>
+
+        <div class="navigator-split">
+          <div class="file-list" id="scannedFileList"></div>
+          <div class="file-detail" id="scannedFileDetail">
+            Click any scanned file on the left to see its AI calls, missing safeguards, and suggested fixes.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP B: STRUCTURAL FAILURE-MODE DIAGNOSTIC FORM -->
+    <form id="diagnosticForm" class="card no-print">
+      <div class="card-header">
+        <div>
+          <h2 class="card-title">2. How Your AI Workflow Runs Today</h2>
+          <p class="card-subtitle">Select where the pilot gets stuck and what safety checks are currently in place.</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="btn btn-sm" id="dlBlankTracesBtn">⬇ Blank Error Log CSV</button>
+          <button type="button" class="btn btn-sm" id="dlBlankStagesBtn">⬇ Blank Steps CSV</button>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:16px;">
+        <div class="field">
+          <label for="workflow_name">Workflow or Pilot Name</label>
+          <input type="text" id="workflow_name" placeholder="e.g. Inbound Order & Quote Assistant" />
+        </div>
+        <div class="field">
+          <label for="current_stage">Where Does This Pilot Stand Right Now?</label>
+          <select id="current_stage">
+            <option value="stalled_internal_pilot">Stalled Internal Pilot (works in demos, too unreliable to launch)</option>
+            <option value="hackathon_or_notebook_demo">Early Prototype / Demo (not yet tested on messy real-world inputs)</option>
+            <option value="brittle_shadow_mode">Heavy Babysitting Mode (staff have to fix outputs by hand)</option>
+            <option value="flaky_production_workflow">Flaky Live Tool (causing wrong answers, timeouts, or support tickets)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field" style="margin-bottom:18px;">
+        <label>What Goes Wrong Today? (Check all that apply)</label>
+        <div class="symptom-grid">
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="hallucinated_facts_or_numbers" />
+            <span><strong>Made-Up Facts or Wrong Math:</strong> Invents product codes, prices, rules, or numbers not in your records</span>
+          </label>
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="breaks_on_edge_cases" />
+            <span><strong>Breaks on Messy Inputs:</strong> Crashes when formatting shifts or a multi-step prompt goes off track</span>
+          </label>
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="bad_rag_or_stale_data" />
+            <span><strong>Outdated or Wrong Lookup Data:</strong> Pulls old documents, duplicate rows, or the wrong customer record</span>
+          </label>
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="silent_production_errors" />
+            <span><strong>Silent Hangs or Dropped Errors:</strong> Times out quietly, retries endlessly, or fails without alerting anyone</span>
+          </label>
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="unstructured_pdf_or_doc_mess" />
+            <span><strong>Messy PDFs, Scans, or Emails:</strong> Misreads complex tables, scanned attachments, or email docs</span>
+          </label>
+          <label class="check-tile">
+            <input type="checkbox" name="failure_symptoms" value="overprivileged_db_or_pii_leak" />
+            <span><strong>Too Much Database Access:</strong> Connects with broad login rights or sees private data it doesn't need</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:18px;">
+        <div class="field">
+          <label for="output_validation">How Do You Check AI Answers Before Using Them?</label>
+          <select id="output_validation">
+            <option value="free_text_or_regex_only">Prompt instructions + basic text/JSON cleanup only</option>
+            <option value="none_raw_completion">No check, raw AI text is sent straight downstream</option>
+            <option value="json_schema_no_critic">Strict field format check (JSON schema), but no fact-check against source data</option>
+            <option value="schema_plus_deterministic_critic">Strict format check + code check verifying IDs, numbers, and quotes</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="retrieval_hygiene">How Clean Is the Data the AI Searches?</label>
+          <select id="retrieval_hygiene">
+            <option value="raw_docs_or_uncleaned_db">Raw uncleaned folders or direct queries on messy database tables</option>
+            <option value="basic_chunking_stale_sync">Basic document chunks or database views that sometimes go stale</option>
+            <option value="curated_views_partial_lineage">Cleaned read-only views with timestamps, occasional misses</option>
+            <option value="governed_freshness_and_pk">Clean, up-to-date views with unique IDs and freshness checks</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="human_in_the_loop">What Happens When the AI Isn't Sure or Hits an Error?</label>
+          <select id="human_in_the_loop">
+            <option value="none_all_or_nothing">All-or-nothing: either runs automatically or fails completely</option>
+            <option value="ad_hoc_slack_or_email">Sends a Slack or email alert, but no organized review queue</option>
+            <option value="confidence_gated_queue">Holds uncertain items in a human approve/reject review queue</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="observability_and_retries">Error Tracking, Timeouts &amp; Retry Limits</label>
+          <select id="observability_and_retries">
+            <option value="console_logs_only">Basic console logs only; blind retries or silent timeouts</option>
+            <option value="basic_apm_no_evals">Standard server logs, no step-by-step AI accuracy tracking</option>
+            <option value="traced_bounded_sla_alerted">Step-by-step logs, safe retry caps, and alerts when errors spike</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:14px;">
+        <div class="field">
+          <label for="traces_csv_text">
+            Optional: Test Run or Error Log Summary (CSV)
+            <input type="file" id="tracesCsvFile" accept=".csv" style="font-size:11px; margin-left:8px;" />
+          </label>
+          <textarea
+            id="traces_csv_text"
+            placeholder="trace_id,step_name,failure_type,grounded_in_source,latency_ms,handled_gracefully"
+          ></textarea>
+          <div class="hint">No prompt text needed, just run IDs, step names, error labels, and true/false flags.</div>
+        </div>
+
+        <div class="field">
+          <label for="stages_csv_text">
+            Optional: Workflow Steps List (CSV)
+            <input type="file" id="stagesCsvFile" accept=".csv" style="font-size:11px; margin-left:8px;" />
+          </label>
+          <textarea
+            id="stages_csv_text"
+            placeholder="stage_order,stage_name,input_source,has_json_schema,has_deterministic_check,has_human_fallback"
+          ></textarea>
+          <div class="hint">Lists each step in your workflow to see where format checks or human fallbacks are missing.</div>
+        </div>
+      </div>
+
+      <details class="optional-box">
+        <summary>Optional Company / Contact Info (Not required, leave blank for private use)</summary>
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="field">
+            <label for="company_name">Company / Team Name (Optional)</label>
+            <input type="text" id="company_name" placeholder="Optional" />
+          </div>
+          <div class="field">
+            <label for="contact_name">Your Name (Optional)</label>
+            <input type="text" id="contact_name" placeholder="Optional" />
+          </div>
+          <div class="field">
+            <label for="contact_email">Contact Email (Optional)</label>
+            <input type="email" id="contact_email" placeholder="Optional" />
+          </div>
+          <div class="field">
+            <label for="industry">Industry</label>
+            <select id="industry">
+              <option value="general">General Business / Software / Operations</option>
+              <option value="supply_chain_distribution">Supply Chain, Manufacturing &amp; Distribution</option>
+              <option value="fintech_financial">Finance, Accounting &amp; FinTech</option>
+              <option value="healthcare_lifesciences">Healthcare &amp; Life Sciences</option>
+              <option value="ecommerce_retail">E-Commerce &amp; Retail</option>
+              <option value="legal">Legal Services</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="team_size">Company Size</label>
+            <select id="team_size">
+              <option value="10-50">10–50</option>
+              <option value="50-250" selected>50–250</option>
+              <option value="250-1000">250–1,000</option>
+              <option value="1000+">1,000+</option>
+            </select>
+          </div>
+        </div>
+      </details>
+
+      <div style="margin-top:18px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button type="submit" class="btn btn-primary">Check What's Breaking My AI Pilot</button>
+          <button type="button" class="btn" id="resetFormBtn">Clear Form</button>
+        </div>
+        <span id="evalEngineStatus" class="status-note">Ready • Runs on your computer</span>
+      </div>
+    </form>
+
+    <!-- STEP C: DIAGNOSTIC RESULTS & RESCUE BLUEPRINT -->
+    <section id="resultsSection">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title" id="resWorkflowTitle">Workflow Rescue Plan</h2>
+            <p class="card-subtitle" id="resTimestamp"></p>
+          </div>
+          <div class="no-print" style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary btn-sm" id="exportCapsuleBtn">
+              ⬇ Export Summary File (.json)
+            </button>
+            <button type="button" class="btn btn-sm" id="exportMarkdownBtn">
+              ⬇ Download Printable Plan (.md)
+            </button>
+            <button type="button" class="btn btn-sm" onclick="window.print()">Print / Save PDF</button>
+          </div>
+        </div>
+
+        <div class="score-banner">
+          <div style="display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
+            <div class="score-circle" id="resHeadlineCircle">--</div>
+            <div>
+              <span class="badge" id="resSeverityBadge">--</span>
+              <h3 style="margin:6px 0 4px 0; font-size:18px;" id="resScoreLabel">--</h3>
+              <div class="status-note" id="resSprintEstimate">--</div>
+              <div class="status-note" style="margin-top:4px;">
+                <strong>How score &amp; effort work:</strong> Step counts and log error rates come strictly from files or CSVs you scan/upload. Effort estimates assume <strong>up to 40 hrs/week</strong>: single-workflow guardrails fit in 1–3 weeks, while multi-step workflows needing lookup cleanup and human review queues start with a 1-week triage followed by phased milestones.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics-row" id="resKeyMetrics"></div>
+
+        <h3 style="font-size:15px; margin:20px 0 12px 0;">Checklist Breakdown by Safeguard Area</h3>
+        <div id="resTaxonomyBars"></div>
+
+        <h3 style="font-size:15px; margin:24px 0 12px 0;">Root Causes &amp; Recommended Fixes</h3>
+        <div id="resFindingsList"></div>
+
+        <h3 style="font-size:15px; margin:24px 0 12px 0;">Step-by-Step Hardening Checklist</h3>
+        <div style="overflow-x:auto;">
+          <table class="checklist-table">
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Area</th>
+                <th>Status</th>
+                <th>Recommended Action</th>
+              </tr>
+            </thead>
+            <tbody id="resChecklistBody"></tbody>
+          </table>
+        </div>
+
+        <div class="pull-card no-print">
+          <p>
+            <strong>Fixing it in-house?</strong> Everything above is yours to keep.
+            Want us to harden and ship this workflow (scoped to realistic 40-hr/week milestones based on your workflow)? Export a Summary File
+            (zero prompts or source code) and email it to <a href="mailto:info@varinull.com?subject=Varinull%20Scout%20%2303%20Summary" style="color:var(--accent);">info@varinull.com</a> if you decide to talk with VARINULL.
+          </p>
+          <button type="button" class="btn btn-sm" id="pullExportBtn">
+            Export Summary File (.json)
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Embedded Demo Payload (Meridian Supply Co., works 100% offline on file:// and /demo)
+    const DEMO_PAYLOAD = {
+      prospect: {
+        company_name: "Meridian Supply Co.",
+        contact_name: "Devon Park (VP Operations & Platform Engineering)",
+        contact_email: "dpark@meridiansupply.example",
+        industry: "supply_chain_distribution",
+        team_size: "50-250"
+      },
+      inputs: {
+        workflow_name: "RFQ & Order-Exception Copilot",
+        current_stage: "stalled_internal_pilot",
+        failure_symptoms: [
+          "hallucinated_facts_or_numbers",
+          "breaks_on_edge_cases",
+          "bad_rag_or_stale_data",
+          "silent_production_errors"
+        ],
+        output_validation: "free_text_or_regex_only",
+        retrieval_hygiene: "raw_docs_or_uncleaned_db",
+        human_in_the_loop: "none_all_or_nothing",
+        observability_and_retries: "console_logs_only",
+        traces_csv_text: [
+          "trace_id,step_name,failure_type,grounded_in_source,latency_ms,handled_gracefully",
+          "TRC-101,parse_inbound_rfq,none,true,820,true",
+          "TRC-102,lookup_erp_sku_catalog,hallucinated_sku,false,2410,false",
+          "TRC-103,match_volume_tier_pricing,none,true,1150,true",
+          "TRC-104,match_volume_tier_pricing,hallucinated_tier_discount,false,3180,false",
+          "TRC-105,lookup_erp_sku_catalog,stale_rag_discontinued_sku,false,1940,false",
+          "TRC-106,draft_erp_order_patch,none,true,1320,true",
+          "TRC-107,dispatch_erp_webhook,silent_webhook_timeout,true,15040,false",
+          "TRC-108,parse_inbound_rfq,none,true,790,true",
+          "TRC-109,match_volume_tier_pricing,hallucinated_unit_price,false,2890,false",
+          "TRC-110,lookup_erp_sku_catalog,missing_pk_duplicate_join,true,2100,false",
+          "TRC-111,draft_erp_order_patch,malformed_regex_json,true,2650,false",
+          "TRC-112,parse_inbound_rfq,none,true,840,true",
+          "TRC-113,match_volume_tier_pricing,none,true,1190,true",
+          "TRC-114,lookup_erp_sku_catalog,hallucinated_pack_size,false,2740,false",
+          "TRC-115,dispatch_erp_webhook,none,true,960,true",
+          "TRC-116,match_volume_tier_pricing,none,true,1210,true",
+          "TRC-117,lookup_erp_sku_catalog,stale_vector_price_sheet,true,1880,false",
+          "TRC-118,draft_erp_order_patch,hallucinated_freight_waiver,false,3420,false",
+          "TRC-119,parse_inbound_rfq,none,true,760,true",
+          "TRC-120,dispatch_erp_webhook,silent_webhook_timeout,true,15012,false",
+          "TRC-121,match_volume_tier_pricing,none,true,1140,true",
+          "TRC-122,lookup_erp_sku_catalog,none,true,1080,true",
+          "TRC-123,match_volume_tier_pricing,hallucinated_moq_override,false,2970,false",
+          "TRC-124,draft_erp_order_patch,none,true,1280,true",
+          "TRC-125,dispatch_erp_webhook,none,true,910,true"
+        ].join("\n"),
+        stages_csv_text: [
+          "stage_order,stage_name,input_source,has_json_schema,has_deterministic_check,has_human_fallback",
+          "1,parse_inbound_rfq,customer_email_and_csv,false,false,false",
+          "2,lookup_erp_sku_catalog,raw_sql_and_vector_chunks,false,false,false",
+          "3,match_volume_tier_pricing,llm_free_text_chain,false,false,false",
+          "4,draft_erp_order_patch,llm_regex_json_extract,false,false,false",
+          "5,dispatch_erp_webhook,erp_rest_webhook,true,true,false"
+        ].join("\n")
+      }
+    };
+
+    const BLANK_TRACES_CSV = "trace_id,step_name,failure_type,grounded_in_source,latency_ms,handled_gracefully\n";
+
+    const BLANK_STAGES_CSV = "stage_order,stage_name,input_source,has_json_schema,has_deterministic_check,has_human_fallback\n";
+
+    const TRUTHY = new Set(["true", "yes", "1", "y", "pass", "ok", "grounded"]);
+    const FALSY = new Set(["false", "no", "0", "n", "fail", "ungrounded", ""]);
+    const HEALTHY_TYPES = new Set(["", "none", "ok", "pass", "healthy", "success", "null"]);
+
+    let currentMode = "production";
+    let latestCapsule = null;
+    let latestScanData = null;
+    let activeScanFilter = "all";
+
+    function normBool(val, fallback) {
+      if (typeof val === "boolean") return val;
+      const s = String(val ?? "").trim().toLowerCase();
+      if (TRUTHY.has(s)) return true;
+      if (FALSY.has(s)) return false;
+      return fallback;
+    }
+
+    function splitCsvLine(line) {
+      const out = [];
+      let cur = "";
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') { cur += '"'; i++; }
+          else { inQuotes = !inQuotes; }
+        } else if (ch === "," && !inQuotes) {
+          out.push(cur.trim());
+          cur = "";
+        } else {
+          cur += ch;
+        }
+      }
+      out.push(cur.trim());
+      return out;
+    }
+
+    function parseCsvObjects(text) {
+      const lines = String(text || "")
+        .split(/\r?\n/)
+        .map(l => l.trim())
+        .filter(l => l && !l.startsWith("#"));
+      if (lines.length < 2) return [];
+      const headers = splitCsvLine(lines[0]).map(h => h.toLowerCase());
+      const rows = [];
+      for (let i = 1; i < lines.length; i++) {
+        const cols = splitCsvLine(lines[i]);
+        const obj = {};
+        headers.forEach((h, idx) => { obj[h] = cols[idx] ?? ""; });
+        rows.push(obj);
+      }
+      return rows;
+    }
+
+    function parseTracesCsv(csvText) {
+      const rawRows = parseCsvObjects(csvText);
+      let failedCount = 0, ungroundedCount = 0, unhandledCount = 0, highLatencyCount = 0;
+      let ragFailures = 0, timeoutFailures = 0;
+      let validCount = 0;
+
+      for (const r of rawRows) {
+        const tid = r.trace_id || "";
+        const sname = r.step_name || "";
+        if (!tid && !sname) continue;
+        validCount++;
+        const ftype = String(r.failure_type || "none").toLowerCase();
+        const grounded = normBool(r.grounded_in_source ?? "true", true);
+        const handled = normBool(r.handled_gracefully ?? "true", true);
+        const lat = parseInt(r.latency_ms || "0", 10) || 0;
+
+        const isFailed = !HEALTHY_TYPES.has(ftype) || !grounded;
+        if (!grounded) ungroundedCount++;
+        if (isFailed) {
+          failedCount++;
+          if (!handled) unhandledCount++;
+        }
+        if (lat >= 5000) highLatencyCount++;
+        if (/(rag|stale|vector|pk|join|schema|sql|duplicate)/.test(ftype)) ragFailures++;
+        if (/(timeout|silent|webhook|retry|500|502|504|rate)/.test(ftype)) timeoutFailures++;
+      }
+
+      return {
+        trace_count: validCount,
+        failed_count: failedCount,
+        ungrounded_count: ungroundedCount,
+        unhandled_count: unhandledCount,
+        high_latency_count: highLatencyCount,
+        rag_or_schema_failures: ragFailures,
+        timeout_or_silent_failures: timeoutFailures,
+        error_rate_pct: validCount > 0 ? Math.round((failedCount * 100) / validCount) : null,
+        ungrounded_rate_pct: validCount > 0 ? Math.round((ungroundedCount * 100) / validCount) : null
+      };
+    }
+
+    function parseStagesCsv(csvText) {
+      const rawRows = parseCsvObjects(csvText);
+      let stageCount = 0, missingSchema = 0, unverifiedHops = 0, missingFallback = 0;
+      let hasDocStage = false, hasRawDbStage = false;
+
+      for (const r of rawRows) {
+        const sname = r.stage_name || "";
+        const src = r.input_source || "";
+        if (!sname && !src) continue;
+        stageCount++;
+        const hasSchema = normBool(r.has_json_schema ?? "false", false);
+        const hasCheck = normBool(r.has_deterministic_check ?? "false", false);
+        const hasFallback = normBool(r.has_human_fallback ?? "false", false);
+        if (!hasSchema) missingSchema++;
+        if (!hasCheck) unverifiedHops++;
+        if (!hasFallback) missingFallback++;
+        const combined = `${sname} ${src}`.toLowerCase();
+        if (/(pdf|ocr|scan|invoice|attachment|doc)/.test(combined)) hasDocStage = true;
+        if (/(raw_sql|vector|pinecone|rag|uncleaned|staging)/.test(combined)) hasRawDbStage = true;
+      }
+
+      return {
+        stage_count: stageCount,
+        missing_schema_count: missingSchema,
+        unverified_hops: unverifiedHops,
+        missing_fallback_count: missingFallback,
+        has_doc_intake_stage: hasDocStage,
+        has_raw_db_or_rag_stage: hasRawDbStage
+      };
+    }
+
+    // Exact client-side deterministic mirror of engine.py evaluate_intake()
+    function evaluateIntakeLocal(payload, mode) {
+      const p = payload.prospect || {};
+      const inp = payload.inputs || {};
+      const symptoms = Array.isArray(inp.failure_symptoms) ? inp.failure_symptoms : [];
+      const symptomSet = new Set(symptoms);
+
+      const prospect = {
+        company_name: String(p.company_name || "").trim(),
+        contact_name: String(p.contact_name || "").trim(),
+        contact_email: String(p.contact_email || "").trim(),
+        industry: String(p.industry || "general").trim() || "general",
+        team_size: String(p.team_size || "50-250").trim() || "50-250"
+      };
+
+      const inputs = {
+        workflow_name: String(inp.workflow_name || "Untitled AI Workflow Pilot").trim() || "Untitled AI Workflow Pilot",
+        current_stage: String(inp.current_stage || "stalled_internal_pilot").trim(),
+        failure_symptoms: symptoms,
+        output_validation: String(inp.output_validation || "free_text_or_regex_only").trim(),
+        retrieval_hygiene: String(inp.retrieval_hygiene || "raw_docs_or_uncleaned_db").trim(),
+        human_in_the_loop: String(inp.human_in_the_loop || "none_all_or_nothing").trim(),
+        observability_and_retries: String(inp.observability_and_retries || "console_logs_only").trim(),
+        traces_csv_text: String(inp.traces_csv_text || ""),
+        stages_csv_text: String(inp.stages_csv_text || "")
+      };
+
+      const traceStats = parseTracesCsv(inputs.traces_csv_text);
+      const stageStats = parseStagesCsv(inputs.stages_csv_text);
+
+      const valMap = { none_raw_completion: 17, free_text_or_regex_only: 14, json_schema_no_critic: 8, schema_plus_deterministic_critic: 2 };
+      let dimCritic = valMap[inputs.output_validation] ?? 14;
+      if (symptomSet.has("hallucinated_facts_or_numbers")) dimCritic += 4;
+      if (symptomSet.has("breaks_on_edge_cases")) dimCritic += 2;
+      if ((traceStats.ungrounded_rate_pct || 0) >= 15) dimCritic += 2;
+      dimCritic = Math.min(25, dimCritic);
+
+      const retMap = { raw_docs_or_uncleaned_db: 13, basic_chunking_stale_sync: 9, curated_views_partial_lineage: 4, governed_freshness_and_pk: 1 };
+      let dimRetrieval = retMap[inputs.retrieval_hygiene] ?? 13;
+      if (symptomSet.has("bad_rag_or_stale_data") || traceStats.rag_or_schema_failures > 0) dimRetrieval += 4;
+      if (symptomSet.has("overprivileged_db_or_pii_leak") || stageStats.has_raw_db_or_rag_stage) dimRetrieval += 2;
+      dimRetrieval = Math.min(20, dimRetrieval);
+
+      const hitlMap = { none_all_or_nothing: 13, ad_hoc_slack_or_email: 8, confidence_gated_queue: 2 };
+      let dimHitl = hitlMap[inputs.human_in_the_loop] ?? 13;
+      if (stageStats.stage_count > 0 && stageStats.missing_fallback_count === stageStats.stage_count) dimHitl += 3;
+      else if (stageStats.missing_fallback_count > 0) dimHitl += 2;
+      if ((inputs.current_stage === "flaky_production_workflow" || inputs.current_stage === "stalled_internal_pilot") && inputs.human_in_the_loop !== "confidence_gated_queue") {
+        dimHitl += 2;
+      }
+      dimHitl = Math.min(20, dimHitl);
+
+      const obsMap = { console_logs_only: 13, basic_apm_no_evals: 8, traced_bounded_sla_alerted: 2 };
+      let dimObs = obsMap[inputs.observability_and_retries] ?? 13;
+      if (symptomSet.has("silent_production_errors") || traceStats.unhandled_count > 0) dimObs += 4;
+      if (traceStats.high_latency_count > 0 || traceStats.timeout_or_silent_failures > 0) dimObs += 2;
+      dimObs = Math.min(20, dimObs);
+
+      let tracePts = traceStats.trace_count > 0
+        ? Math.min(9, Math.round((traceStats.failed_count / traceStats.trace_count) * 12 + (traceStats.unhandled_count / traceStats.trace_count) * 6))
+        : Math.min(5, symptomSet.size);
+      let stagePts = stageStats.stage_count > 0
+        ? Math.min(6, Math.round((stageStats.unverified_hops / stageStats.stage_count) * 4 + (stageStats.missing_schema_count / stageStats.stage_count) * 2))
+        : (symptomSet.has("breaks_on_edge_cases") ? 3 : (inputs.output_validation !== "schema_plus_deterministic_critic" ? 2 : 0));
+      const dimEmpirical = Math.min(15, tracePts + stagePts);
+
+      const headlineScore = Math.max(0, Math.min(100, dimCritic + dimRetrieval + dimHitl + dimObs + dimEmpirical));
+
+      let estimatedSprintDays = "1-2 Weeks · ~40-80 hrs (at 40 hrs/wk)";
+      if (
+        headlineScore >= 80 ||
+        (headlineScore >= 70 && (symptomSet.size >= 4 || stageStats.stage_count >= 5 || symptomSet.has("unstructured_pdf_or_doc_mess")))
+      ) {
+        estimatedSprintDays = "5-7 Weeks (Phased) · Phase 1: 1-Week Triage · Phase 2: 4-6 Weeks (~160-240 hrs at 40 hrs/wk)";
+      } else if (headlineScore >= 60) {
+        estimatedSprintDays = "3-5 Weeks · ~120-200 hrs (at 40 hrs/wk)";
+      } else if (headlineScore >= 35) {
+        estimatedSprintDays = "2-3 Weeks · ~80-120 hrs (at 40 hrs/wk)";
+      }
+
+      let severityTier = "LOW", scoreLabel = "";
+      if (headlineScore >= 85) {
+        severityTier = "CRITICAL";
+        scoreLabel = `High Priority Gaps (${headlineScore}/100 Checklist Score)`;
+      } else if (headlineScore >= 65) {
+        severityTier = "HIGH";
+        scoreLabel = `Notable Safeguard Gaps (${headlineScore}/100 Checklist Score)`;
+      } else if (headlineScore >= 40) {
+        severityTier = "MODERATE";
+        scoreLabel = `Moderate Safeguard Gaps (${headlineScore}/100 Checklist Score)`;
+      } else {
+        severityTier = "LOW";
+        scoreLabel = `Low Checklist Exposure (${headlineScore}/100 Checklist Score)`;
+      }
+
+      const unverifiedDisplay = stageStats.stage_count > 0 ? `${stageStats.unverified_hops} of ${stageStats.stage_count}` : "Not Provided";
+      const traceErrDisplay = traceStats.trace_count > 0 ? `${traceStats.error_rate_pct}% (${traceStats.failed_count}/${traceStats.trace_count})` : "No Logs Uploaded";
+
+      const keyMetrics = [
+        { label: "Checklist Score", value: `${headlineScore} / 100` },
+        { label: "Unchecked Steps (CSV/Scan)", value: unverifiedDisplay },
+        { label: "Error Rate in Uploaded Logs", value: traceErrDisplay },
+        { label: "Estimated Effort", value: estimatedSprintDays }
+      ];
+
+      const failureTaxonomy = [
+        { axis: "Output Format & Fact-Checking", risk_points: dimCritic, max_points: 25, status: dimCritic >= 18 ? "CRITICAL" : (dimCritic >= 10 ? "ELEVATED" : "HEALTHY") },
+        { axis: "Cleanliness of Lookup Data", risk_points: dimRetrieval, max_points: 20, status: dimRetrieval >= 15 ? "CRITICAL" : (dimRetrieval >= 8 ? "ELEVATED" : "HEALTHY") },
+        { axis: "Human Review Fallback", risk_points: dimHitl, max_points: 20, status: dimHitl >= 14 ? "CRITICAL" : (dimHitl >= 8 ? "ELEVATED" : "HEALTHY") },
+        { axis: "Error Logs, Timeouts & Retries", risk_points: dimObs, max_points: 20, status: dimObs >= 14 ? "CRITICAL" : (dimObs >= 8 ? "ELEVATED" : "HEALTHY") },
+        { axis: "Workflow Complexity & Logged Errors", risk_points: dimEmpirical, max_points: 15, status: dimEmpirical >= 10 ? "CRITICAL" : (dimEmpirical >= 5 ? "ELEVATED" : "HEALTHY") }
+      ];
+
+      const topFindings = [];
+      if (inputs.output_validation !== "schema_plus_deterministic_critic" || symptomSet.has("hallucinated_facts_or_numbers") || traceStats.ungrounded_count > 0) {
+        const ungroundedNote = (traceStats.trace_count > 0 && traceStats.ungrounded_count > 0)
+          ? ` (${traceStats.ungrounded_rate_pct}% of uploaded log entries contained unverified claims or numbers)` : "";
+        const hopNote = stageStats.stage_count > 0
+          ? ` across ${stageStats.unverified_hops} of ${stageStats.stage_count} listed workflow steps` : "";
+        topFindings.push({
+          id: "PR-01",
+          severity: dimCritic >= 16 ? "CRITICAL" : "HIGH",
+          title: "AI Outputs Pass Through Without Code-Level Fact & Format Checks",
+          detail: `Outputs currently rely on '${inputs.output_validation}'${hopNote}${ungroundedNote}. Without strict output field validation and a code check that verifies IDs, prices, and source quotes, made-up values flow straight into your business tools.`,
+          client_next_step: "Require strict field formats (JSON schema) at each step and add a code check that compares every output ID, number, and quote against your real records."
+        });
+      }
+      if (inputs.retrieval_hygiene === "raw_docs_or_uncleaned_db" || inputs.retrieval_hygiene === "basic_chunking_stale_sync" || symptomSet.has("bad_rag_or_stale_data") || traceStats.rag_or_schema_failures > 0) {
+        const ragNote = traceStats.rag_or_schema_failures > 0
+          ? ` (${traceStats.rag_or_schema_failures} uploaded log entries failed due to outdated or duplicate lookup data)` : "";
+        topFindings.push({
+          id: "PR-02",
+          severity: dimRetrieval >= 13 ? "HIGH" : "MODERATE",
+          title: "AI Searches Messy, Outdated, or Duplicate Source Data",
+          detail: `Data cleanliness is marked '${inputs.retrieval_hygiene}'${ragNote}. Feeding uncleaned folders, duplicate rows, or outdated product records into an AI prompt produces confident wrong answers no matter which model you use.`,
+          client_next_step: "Create clean read-only database views with unique IDs and freshness timestamps before passing data into the AI step."
+        });
+      }
+      if (inputs.human_in_the_loop !== "confidence_gated_queue" || (stageStats.stage_count > 0 && stageStats.missing_fallback_count > 0)) {
+        topFindings.push({
+          id: "PR-03",
+          severity: dimHitl >= 14 ? "HIGH" : "MODERATE",
+          title: "All-or-Nothing Workflow With No Human Review Queue",
+          detail: `Human fallback is marked '${inputs.human_in_the_loop}'. When an unusual case or mismatch happens, there is no hold queue, forcing your team to either pause the whole tool or double-check every single output by hand.`,
+          client_next_step: "Let verified items pass automatically and hold uncertain or mismatched items in a clear human approve/edit/reject queue."
+        });
+      }
+      if (inputs.observability_and_retries !== "traced_bounded_sla_alerted" || symptomSet.has("silent_production_errors") || traceStats.unhandled_count > 0) {
+        const unhandledNote = (traceStats.trace_count > 0 && (traceStats.unhandled_count > 0 || traceStats.high_latency_count > 0))
+          ? ` (${traceStats.unhandled_count} failed runs were not caught cleanly; ${traceStats.high_latency_count} took longer than 5 seconds)` : "";
+        topFindings.push({
+          id: "PR-04",
+          severity: (traceStats.unhandled_count >= 3 || symptomSet.has("silent_production_errors")) ? "CRITICAL" : "MODERATE",
+          title: "Silent Timeouts, Uncapped Retries, or Missing Step Logs",
+          detail: `Error tracking is marked '${inputs.observability_and_retries}'${unhandledNote}. Hidden errors, missing timeouts, and blind retries cause dropped updates or unexpected API bills.`,
+          client_next_step: "Add clear timeouts on every API call, cap retries, quarantine bad inputs for review, and alert your team when errors spike."
+        });
+      }
+      if (symptomSet.has("unstructured_pdf_or_doc_mess") || stageStats.has_doc_intake_stage) {
+        topFindings.push({
+          id: "PR-05",
+          severity: "MODERATE",
+          title: "Messy PDFs, Scans, or Email Attachments Break Downstream Steps",
+          detail: "Incoming PDFs, tables, or attachments are read directly inside a long prompt without first checking whether all required fields were extracted cleanly.",
+          client_next_step: "Separate document reading into its own first step with required field checks, and send unreadable scans to a person before running business rules."
+        });
+      }
+      if (symptomSet.has("overprivileged_db_or_pii_leak")) {
+        topFindings.push({
+          id: "PR-06",
+          severity: "HIGH",
+          title: "AI Connects With Broad Database Rights or Unmasked Private Info",
+          detail: "The pilot uses read/write database logins or sees raw private customer/staff fields it does not need, blocking security approval.",
+          client_next_step: "Switch the AI to a restricted read-only login with masked private columns, and handle any database writes in standard tested code."
+        });
+      }
+      if (topFindings.length === 0) {
+        topFindings.push({
+          id: "PR-00",
+          severity: "LOW",
+          title: "Core Safeguards Are in Place",
+          detail: "Format checks, clean lookup views, human review queues, and step-by-step error logs are already active.",
+          client_next_step: "Save a set of past tricky examples as an automated test check before rolling out updates."
+        });
+      }
+
+      const checklist = [
+        {
+          step: 1,
+          category: "Saved Test Cases",
+          item: "Save 25–50 real-world tricky examples so you can test changes automatically before going live.",
+          status: traceStats.trace_count >= 20 ? "READY" : "ACTION_REQUIRED"
+        },
+        {
+          step: 2,
+          category: "Strict Output Format",
+          item: "Require every AI step to return a strict, predictable data format (JSON schema) instead of loose text.",
+          status: ((inputs.output_validation === "json_schema_no_critic" || inputs.output_validation === "schema_plus_deterministic_critic") && stageStats.missing_schema_count === 0) ? "READY" : "ACTION_REQUIRED"
+        },
+        {
+          step: 3,
+          category: "Code Fact-Check",
+          item: "Check AI-generated IDs, product codes, math, and quotes in regular code against your source records before acting.",
+          status: (inputs.output_validation === "schema_plus_deterministic_critic" && stageStats.unverified_hops === 0) ? "READY" : "ACTION_REQUIRED"
+        },
+        {
+          step: 4,
+          category: "Clean Lookup Data",
+          item: "Confirm unique IDs, up-to-date timestamps, and clean read-only views on all databases and document folders.",
+          status: inputs.retrieval_hygiene === "governed_freshness_and_pk" ? "READY" : "ACTION_REQUIRED"
+        },
+        {
+          step: 5,
+          category: "Human Review Queue",
+          item: "Send uncertain answers and failed checks to a simple human approve/reject queue instead of failing silently.",
+          status: inputs.human_in_the_loop === "confidence_gated_queue" ? "READY" : "ACTION_REQUIRED"
+        },
+        {
+          step: 6,
+          category: "Timeouts & Retry Caps",
+          item: "Set clear time limits and retry caps on every AI and webhook call, with alerts if errors spike.",
+          status: inputs.observability_and_retries === "traced_bounded_sla_alerted" ? "READY" : "ACTION_REQUIRED"
+        }
+      ];
+
+      const routingSignals = [];
+      if (inputs.output_validation !== "schema_plus_deterministic_critic" || symptomSet.has("hallucinated_facts_or_numbers") || symptomSet.has("breaks_on_edge_cases") || traceStats.ungrounded_count > 0 || stageStats.unverified_hops > 0) {
+        routingSignals.push("hallucination_or_ungrounded_output");
+      }
+      if (inputs.retrieval_hygiene === "raw_docs_or_uncleaned_db" || inputs.retrieval_hygiene === "basic_chunking_stale_sync" || symptomSet.has("bad_rag_or_stale_data") || traceStats.rag_or_schema_failures > 0 || stageStats.has_raw_db_or_rag_stage) {
+        routingSignals.push("broken_rag_schema_or_data_hygiene");
+      }
+      if (inputs.human_in_the_loop !== "confidence_gated_queue" || inputs.observability_and_retries !== "traced_bounded_sla_alerted" || symptomSet.has("silent_production_errors") || traceStats.unhandled_count > 0 || stageStats.missing_fallback_count > 0) {
+        routingSignals.push("missing_observability_or_hitl");
+      }
+      if (symptomSet.has("unstructured_pdf_or_doc_mess")) {
+        routingSignals.push("unstructured_pdf_or_doc_intake");
+      }
+      if (symptomSet.has("overprivileged_db_or_pii_leak")) {
+        routingSignals.push("overprivileged_agent_or_db_roles");
+        routingSignals.push("unclassified_pii_or_secrets");
+      }
+
+      return {
+        capsule_version: "1.0",
+        niche_id: 3,
+        niche_slug: "sprint-3-pilot-rescue",
+        niche_title: "Stalled AI Pilot to Working Workflow Rescue (Typically 2-3 Weeks)",
+        mode: mode === "demo" ? "demo" : "production",
+        generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
+        prospect,
+        inputs,
+        client_assessment: {
+          headline_score: headlineScore,
+          score_label: scoreLabel,
+          severity_tier: severityTier,
+          estimated_sprint_days: estimatedSprintDays,
+          key_metrics: keyMetrics,
+          failure_taxonomy: failureTaxonomy,
+          top_findings: topFindings,
+          safe_to_deploy_checklist: checklist
+        },
+        routing_signals: routingSignals
+      };
+    }
+
+    function buildClientMarkdown(capsule) {
+      const p = capsule.prospect || {};
+      const inp = capsule.inputs || {};
+      const ca = capsule.client_assessment || {};
+      const org = p.company_name || "Local Engineering Workspace";
+      const lines = [
+        `# Hardened AI Workflow Rescue Blueprint: ${inp.workflow_name || "AI Workflow"}`,
+        "",
+        `- **Workspace / Organization:** ${org}`,
+        `- **Generated At:** ${capsule.generated_at}`,
+        `- **Assessment Mode:** \`${capsule.mode}\``,
+        `- **Headline Score:** **${ca.score_label}**`,
+        `- **Severity Tier:** \`${ca.severity_tier}\` | **Estimated Cutover Window:** \`${ca.estimated_sprint_days}\``,
+        "",
+        "## 1. Key Diagnostic Metrics",
+        "",
+        "| Metric | Value |",
+        "| :--- | :--- |"
+      ];
+      (ca.key_metrics || []).forEach(m => lines.push(`| ${m.label} | **${m.value}** |`));
+      if (ca.failure_taxonomy) {
+        lines.push("", "## 2. Failure-Mode Risk Breakdown", "", "| Failure Axis | Risk Contribution | Status |", "| :--- | :--- | :--- |");
+        ca.failure_taxonomy.forEach(ax => lines.push(`| ${ax.axis} | \`${ax.risk_points} / ${ax.max_points}\` | **${ax.status}** |`));
+      }
+      lines.push("", "## 3. Root-Cause Findings & Architectural Fixes", "");
+      (ca.top_findings || []).forEach((f, i) => {
+        lines.push(`### ${i + 1}. [${f.severity}] ${f.title} (\`${f.id}\`)`);
+        lines.push(`- **Why It Breaks:** ${f.detail}`);
+        lines.push(`- **Engineering Remediation:** ${f.client_next_step}`, "");
+      });
+      lines.push("## 4. Safe-to-Deploy Rescue Checklist (1–2 Week Plan)", "", "| Step | Category | Status | Action Item |", "| :--- | :--- | :--- | :--- |");
+      (ca.safe_to_deploy_checklist || []).forEach(c => {
+        lines.push(`| ${c.step} | **${c.category}** | \`${c.status}\` | ${c.item} |`);
+      });
+      lines.push(
+        "",
+        "---",
+        "",
+        "> **Fixing it in-house?** Everything above is yours to keep. Want us to harden and ship this workflow (typically 2–3 weeks, scoped upfront)? Export a sanitized structural capsule (`varinull-capsule-sprint3.json`, zero prompts or proprietary source code) if you decide to call VARINULL."
+      );
+      return lines.join("\n") + "\n";
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderCapsuleResults(capsule) {
+      latestCapsule = capsule;
+      const ca = capsule.client_assessment;
+      const sec = document.getElementById("resultsSection");
+      sec.classList.add("active");
+
+      document.getElementById("resWorkflowTitle").textContent =
+        `Hardened Workflow Rescue Blueprint, ${capsule.inputs.workflow_name}`;
+      const orgLabel = capsule.prospect.company_name ? ` • ${capsule.prospect.company_name}` : "";
+      document.getElementById("resTimestamp").textContent =
+        `Generated ${capsule.generated_at}${orgLabel} • Mode: ${capsule.mode.toUpperCase()}`;
+
+      const circle = document.getElementById("resHeadlineCircle");
+      circle.textContent = ca.headline_score;
+      circle.style.borderColor =
+        ca.severity_tier === "CRITICAL" ? "var(--danger)" :
+        ca.severity_tier === "HIGH" ? "var(--warn)" :
+        ca.severity_tier === "MODERATE" ? "var(--accent)" : "var(--ok)";
+
+      const badge = document.getElementById("resSeverityBadge");
+      badge.className = `badge badge-${ca.severity_tier}`;
+      badge.textContent = `${ca.severity_tier} FRAGILITY`;
+
+      document.getElementById("resScoreLabel").textContent = ca.score_label;
+      const effortParts = String(ca.estimated_sprint_days || "").split(" · ");
+      document.getElementById("resSprintEstimate").innerHTML =
+        `<strong>Estimated Effort:</strong> ${escapeHtml(effortParts[0] || "")}` +
+        (effortParts.length > 1 ? ` <span style="opacity:0.88;">(${effortParts.slice(1).map(escapeHtml).join(" | ")})</span>` : "");
+
+      const metricsEl = document.getElementById("resKeyMetrics");
+      metricsEl.innerHTML = (ca.key_metrics || []).map(m => {
+        const parts = String(m.value ?? "").split(" · ");
+        const head = parts[0] || "";
+        const subs = parts.slice(1);
+        const isText = head.length > 11 || /^[A-Za-z]/.test(head);
+        return `
+        <div class="metric-box">
+          <div class="m-label">${escapeHtml(m.label)}</div>
+          <div class="m-val${isText ? " is-text" : ""}">${escapeHtml(head)}</div>
+          ${subs.length ? `<div class="m-sub">${subs.map(s => `<div>${escapeHtml(s)}</div>`).join("")}</div>` : ""}
+        </div>
+        `;
+      }).join("");
+
+      const taxEl = document.getElementById("resTaxonomyBars");
+      taxEl.innerHTML = (ca.failure_taxonomy || []).map(ax => {
+        const pct = Math.round((ax.risk_points * 100) / ax.max_points);
+        return `
+          <div class="tax-row">
+            <div class="tax-head">
+              <span><strong>${escapeHtml(ax.axis)}</strong></span>
+              <span><span class="badge badge-${ax.status}">${ax.status}</span> &nbsp; <code>${ax.risk_points} / ${ax.max_points} pts</code></span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+          </div>
+        `;
+      }).join("");
+
+      const findEl = document.getElementById("resFindingsList");
+      findEl.innerHTML = (ca.top_findings || []).map(f => `
+        <div class="finding-card">
+          <div class="finding-top">
+            <span class="badge badge-${f.severity}">${escapeHtml(f.severity)}</span>
+            <code>${escapeHtml(f.id)}</code>
+            <strong>${escapeHtml(f.title)}</strong>
+          </div>
+          <div style="font-size:13.5px; color:var(--text-muted); margin-bottom:8px;">
+            ${escapeHtml(f.detail)}
+          </div>
+          <div style="font-size:13px;">
+            <strong>Remediation:</strong> ${escapeHtml(f.client_next_step)}
+          </div>
+        </div>
+      `).join("");
+
+      const clEl = document.getElementById("resChecklistBody");
+      clEl.innerHTML = (ca.safe_to_deploy_checklist || []).map(c => `
+        <tr>
+          <td><code>#${c.step}</code></td>
+          <td><strong>${escapeHtml(c.category)}</strong></td>
+          <td><span class="badge badge-${c.status}">${escapeHtml(c.status)}</span></td>
+          <td>${escapeHtml(c.item)}</td>
+        </tr>
+      `).join("");
+    }
+
+    function collectFormPayload() {
+      const checkedSymptoms = Array.from(document.querySelectorAll('input[name="failure_symptoms"]:checked'))
+        .map(el => el.value);
+      return {
+        prospect: {
+          company_name: document.getElementById("company_name").value,
+          contact_name: document.getElementById("contact_name").value,
+          contact_email: document.getElementById("contact_email").value,
+          industry: document.getElementById("industry").value,
+          team_size: document.getElementById("team_size").value
+        },
+        inputs: {
+          workflow_name: document.getElementById("workflow_name").value,
+          current_stage: document.getElementById("current_stage").value,
+          failure_symptoms: checkedSymptoms,
+          output_validation: document.getElementById("output_validation").value,
+          retrieval_hygiene: document.getElementById("retrieval_hygiene").value,
+          human_in_the_loop: document.getElementById("human_in_the_loop").value,
+          observability_and_retries: document.getElementById("observability_and_retries").value,
+          traces_csv_text: document.getElementById("traces_csv_text").value,
+          stages_csv_text: document.getElementById("stages_csv_text").value
+        }
+      };
+    }
+
+    function populateForm(payload) {
+      const p = payload.prospect || {};
+      const inp = payload.inputs || payload;
+      if (p.company_name !== undefined) document.getElementById("company_name").value = p.company_name || "";
+      if (p.contact_name !== undefined) document.getElementById("contact_name").value = p.contact_name || "";
+      if (p.contact_email !== undefined) document.getElementById("contact_email").value = p.contact_email || "";
+      if (p.industry) document.getElementById("industry").value = p.industry;
+      if (p.team_size) document.getElementById("team_size").value = p.team_size;
+
+      document.getElementById("workflow_name").value = inp.workflow_name || "";
+      if (inp.current_stage) document.getElementById("current_stage").value = inp.current_stage;
+      if (inp.output_validation) document.getElementById("output_validation").value = inp.output_validation;
+      if (inp.retrieval_hygiene) document.getElementById("retrieval_hygiene").value = inp.retrieval_hygiene;
+      if (inp.human_in_the_loop) document.getElementById("human_in_the_loop").value = inp.human_in_the_loop;
+      if (inp.observability_and_retries) document.getElementById("observability_and_retries").value = inp.observability_and_retries;
+      document.getElementById("traces_csv_text").value = inp.traces_csv_text || "";
+      document.getElementById("stages_csv_text").value = inp.stages_csv_text || "";
+
+      const symSet = new Set(inp.failure_symptoms || []);
+      document.querySelectorAll('input[name="failure_symptoms"]').forEach(cb => {
+        cb.checked = symSet.has(cb.value);
+      });
+    }
+
+    async function runDiagnostic(scrollAfter) {
+      const payload = collectFormPayload();
+      const statusEl = document.getElementById("evalEngineStatus");
+      let capsule = evaluateIntakeLocal(payload, currentMode);
+
+      if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+        try {
+          const resp = await fetch("/api/assess", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...payload, mode: currentMode })
+          });
+          if (resp.ok) {
+            capsule = await resp.json();
+            statusEl.textContent = currentMode === "demo"
+              ? "Evaluated via local server (Demo Mode, not stored in production DB)"
+              : "Evaluated on your localhost (127.0.0.1)";
+          }
+        } catch (_err) {
+          statusEl.textContent = "Evaluated offline in browser (zero network calls)";
+        }
+      } else {
+        statusEl.textContent = "Evaluated 100% offline in browser (file:// mode)";
+      }
+
+      renderCapsuleResults(capsule);
+      if (scrollAfter) {
+        document.getElementById("resultsSection").scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    function downloadBlob(filename, content, mimeType) {
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    // --- Interactive Local Codebase & Trace Navigator (Server API + Pure Browser Fallback) ---
+    function renderScanData(scanData) {
+      latestScanData = scanData;
+      const box = document.getElementById("scanResultsContainer");
+      box.classList.add("active");
+      const s = scanData.summary || {};
+
+      document.getElementById("scanKpiStrip").innerHTML = [
+        { num: s.files_scanned ?? 0, lbl: "Files Inspected" },
+        { num: s.total_llm_call_sites ?? 0, lbl: "LLM Call Sites" },
+        { num: s.files_missing_schema ?? 0, lbl: "Missing Pydantic/Zod" },
+        { num: s.files_missing_timeouts ?? 0, lbl: "Missing Timeouts" },
+        { num: s.files_missing_critic ?? 0, lbl: "Missing Critic Gate" },
+        { num: s.trace_events_parsed ?? 0, lbl: "Trace Logs Parsed" }
+      ].map(k => `
+        <div class="kpi-mini">
+          <div class="num">${k.num}</div>
+          <div class="lbl">${k.lbl}</div>
+        </div>
+      `).join("");
+
+      renderFilteredScanList();
+    }
+
+    function renderFilteredScanList() {
+      if (!latestScanData) return;
+      const allFiles = latestScanData.files || [];
+      const filtered = allFiles.filter(f => {
+        if (activeScanFilter === "llm") return (f.llm_call_count || 0) > 0;
+        if (activeScanFilter === "hotspots") return (f.fragility_score || 0) >= 20;
+        if (activeScanFilter === "traces") return f.file_type === "trace_data";
+        return true;
+      });
+
+      const listEl = document.getElementById("scannedFileList");
+      if (filtered.length === 0) {
+        listEl.innerHTML = `<div style="padding:14px; color:var(--text-muted); font-size:12.5px;">No matching files in this filter.</div>`;
+        document.getElementById("scannedFileDetail").innerHTML = "No file selected.";
+        return;
+      }
+
+      listEl.innerHTML = filtered.map((f, idx) => `
+        <div class="file-row ${idx === 0 ? "selected" : ""}" data-idx="${idx}">
+          <span class="file-path">${escapeHtml(f.path)}</span>
+          <span class="badge badge-${f.severity}">${f.fragility_score}</span>
+        </div>
+      `).join("");
+
+      const rows = listEl.querySelectorAll(".file-row");
+      rows.forEach(row => {
+        row.addEventListener("click", () => {
+          rows.forEach(r => r.classList.remove("selected"));
+          row.classList.add("selected");
+          renderSingleFileInspector(filtered[parseInt(row.dataset.idx, 10)]);
+        });
+      });
+
+      renderSingleFileInspector(filtered[0]);
+    }
+
+    function renderSingleFileInspector(f) {
+      const el = document.getElementById("scannedFileDetail");
+      if (!f) return;
+
+      if (f.file_type === "trace_data") {
+        el.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;">
+            <strong style="font-family:var(--mono);">${escapeHtml(f.path)}</strong>
+            <span class="badge badge-${f.severity}">${f.severity} (${f.fragility_score}/100)</span>
+          </div>
+          <p style="margin:8px 0; color:var(--text-muted);">
+            Trace Log Dataset • <strong>${f.trace_records_found}</strong> records parsed •
+            <strong>${f.failed_traces}</strong> failed • <strong>${f.ungrounded_traces}</strong> ungrounded •
+            <strong>${f.high_latency_traces}</strong> &ge;5,000ms
+          </p>
+          <div style="margin-top:8px;">
+            ${(f.hotspots || []).map(h => `<span class="badge badge-HIGH" style="margin-right:6px; margin-bottom:4px;">${escapeHtml(h)}</span>`).join("")}
+          </div>
+        `;
+        return;
+      }
+
+      const g = f.guards || {};
+      const guardHtml = [
+        ["Schema Validation (Pydantic/Zod)", g.schema_validation],
+        ["Timeouts / Bounded Retries", g.timeouts_or_retries],
+        ["Deterministic Critic Check", g.deterministic_verification],
+        ["Safe Error Handler", g.error_handler_present],
+        ["HITL Escalation Queue", g.human_fallback_queue]
+      ].map(([label, ok]) => `
+        <div class="guard-chip ${ok ? "guard-ok" : "guard-miss"}">
+          ${ok ? "✓" : "✗"} ${escapeHtml(label)}
+        </div>
+      `).join("");
+
+      const sitesHtml = (f.llm_call_sites || []).length > 0
+        ? `<div style="margin:8px 0; font-size:12px;"><strong>LLM Call Sites:</strong> ` +
+          f.llm_call_sites.map(s => `<code>L${s.line} (${escapeHtml(s.kind)})</code>`).join(", ") + `</div>`
+        : `<div style="margin:8px 0; font-size:12px; color:var(--text-muted);">No direct LLM SDK call in this file (${f.retrieval_detected ? "Retrieval / DB module" : "Supporting module"}).</div>`;
+
+      const hintsHtml = (f.fix_hints || []).length > 0
+        ? `<ul style="margin:8px 0 0 18px; padding:0; font-size:12.5px;">` +
+          f.fix_hints.map(h => `<li>${escapeHtml(h)}</li>`).join("") + `</ul>`
+        : `<div style="color:var(--ok); font-size:12.5px;">No major structural fragility hotspots detected in this file.</div>`;
+
+      el.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;">
+          <strong style="font-family:var(--mono);">${escapeHtml(f.path)}</strong>
+          <span class="badge badge-${f.severity}">${f.severity} (${f.fragility_score}/100)</span>
+        </div>
+        <div class="status-note" style="margin-top:4px;">${f.line_count} lines • ${f.llm_call_count} LLM call site(s)</div>
+        ${sitesHtml}
+        <div class="guard-grid">${guardHtml}</div>
+        <div><strong>Actionable Hardening Steps:</strong>${hintsHtml}</div>
+      `;
+    }
+
+    async function triggerServerScan(targetPath) {
+      const msg = document.getElementById("scanStatusMsg");
+      if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+        msg.textContent = "Running in standalone file:// mode, use 'Browse Local Folder' button above to inspect files directly in your browser.";
+        return;
+      }
+      msg.textContent = "Scanning local files (pattern scan in local memory, no source code saved or uploaded)...";
+      try {
+        const resp = await fetch("/api/scan-local", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ path: targetPath })
+        });
+        const data = await resp.json();
+        if (!resp.ok) {
+          msg.textContent = `Scan error: ${data.detail || "Unable to scan path"}`;
+          return;
+        }
+        msg.textContent = `Scanned ${data.summary.files_scanned} file(s) in ${data.scanned_root} (100% local read-only).`;
+        renderScanData(data);
+      } catch (err) {
+        msg.textContent = `Local server unreachable. Use 'Browse Local Folder' to scan directly in browser.`;
+      }
+    }
+
+    // Pure client-side folder scanner for offline file:// usage
+    async function scanBrowserFileList(fileList) {
+      const allowedCode = new Set([".py", ".ts", ".js", ".mjs"]);
+      const allowedData = new Set([".json", ".jsonl"]);
+      const skipSegs = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", "dist", "build"]);
+
+      const inspectedFiles = [];
+      const collectedTraces = [];
+      let codeCount = 0, traceFileCount = 0, totalLlm = 0;
+      let missSchema = 0, missTimeout = 0, missCritic = 0, swallowCount = 0, rawSqlCount = 0;
+
+      const filesArr = Array.from(fileList).slice(0, 400);
+      for (const file of filesArr) {
+        const rel = (file.webkitRelativePath || file.name).replace(/\\/g, "/");
+        if (rel.split("/").some(seg => skipSegs.has(seg))) continue;
+        const dotIdx = file.name.lastIndexOf(".");
+        if (dotIdx < 0) continue;
+        const ext = file.name.slice(dotIdx).toLowerCase();
+        if (!allowedCode.has(ext) && !allowedData.has(ext)) continue;
+        if (file.size > 2000000) continue;
+
+        const text = await file.text();
+        const lines = text.split(/\r?\n/);
+
+        if (allowedCode.has(ext)) {
+          codeCount++;
+          const activeLines = [];
+          const llmSites = [];
+          lines.forEach((ln, i) => {
+            const st = ln.trim();
+            if ((ext === ".py" && st.startsWith("#")) || (ext !== ".py" && st.startsWith("//"))) return;
+            activeLines.push(ln);
+            if (/(chat\.completions\.create|responses\.create|ChatOpenAI|OpenAI\s*\(|messages\.create|Anthropic\s*\(|generate_content|generateContent|AgentExecutor|StateGraph|litellm\.completion)/.test(ln)) {
+              llmSites.push({ line: i + 1, kind: "LLM / Agent Call" });
+            }
+          });
+          const activeCode = activeLines.join("\n");
+          const hasSchema = /\b(BaseModel|TypeAdapter|pydantic|zod|z\.object|ajv|jsonschema|with_structured_output|response_format|generateObject|instructor)\b/.test(activeCode);
+          const hasFragile = /(json\.loads\s*\(|JSON\.parse\s*\(|re\.search\s*\()/.test(activeCode);
+          const hasTimeout = /\b(timeout\s*=|timeout\s*:|AbortController|AbortSignal\.timeout|tenacity|@retry|max_retries|backoff)\b/.test(activeCode);
+          const hasCritic = /\b(def\s+(?:verify|validate|check|critic|reconcile)_\w+|function\s+(?:verify|validate|check|critic)\w*|critic_gate|quote_grounding)\b/.test(activeCode);
+          const hasFallback = /\b(human_review|escalate_to_human|escalation_queue|dead_letter|dlq|review_queue|hitl)\b/.test(activeCode);
+          const hasRetrieval = /\b(pinecone|chromadb|qdrant|weaviate|pgvector|SELECT\s+\*\s+FROM)\b/i.test(activeCode);
+          const hasRawSql = /(\.execute\s*\(\s*f['"]|SELECT\s+\*\s+FROM)/i.test(activeCode);
+          const silentSwallow = ext === ".py"
+            ? /except(?:\s+\w[\w\s,().]*)?\s*:\s*\n\s*pass\b/.test(activeCode)
+            : /catch\s*\([^)]*\)\s*\{\s*(?:console\.(?:log|warn)\([^)]*\)\s*;?\s*)?\}/.test(activeCode);
+
+          let risk = 0;
+          const hotspots = [], fixHints = [];
+          totalLlm += llmSites.length;
+          if (llmSites.length > 0) {
+            if (!hasSchema) { risk += 28; missSchema++; hotspots.push("No Pydantic/Zod Schema"); fixHints.push("Enforce typed structured output schemas on LLM responses."); }
+            if (hasFragile && !hasSchema) { risk += 14; hotspots.push("Fragile JSON/Regex Parse"); }
+            if (!hasCritic) { risk += 20; missCritic++; hotspots.push("No Deterministic Critic"); fixHints.push("Add deterministic ID/quote verification before downstream writes."); }
+            if (!hasTimeout) { risk += 18; missTimeout++; hotspots.push("Missing Timeout / Retry"); fixHints.push("Add explicit request timeouts and bounded retries."); }
+            if (!hasFallback) { risk += 10; hotspots.push("No HITL Escalation"); }
+          }
+          if (silentSwallow) { risk += 18; swallowCount++; hotspots.push("Silent Exception Swallow"); fixHints.push("Replace swallowed exceptions with structured error routing."); }
+          if (hasRawSql) { risk += 22; rawSqlCount++; hotspots.push("Uncleaned SELECT * / SQL"); }
+          risk = Math.min(100, risk);
+
+          inspectedFiles.push({
+            path: rel,
+            file_type: "code",
+            line_count: lines.length,
+            llm_call_count: llmSites.length,
+            llm_call_sites: llmSites,
+            guards: {
+              schema_validation: hasSchema,
+              timeouts_or_retries: hasTimeout,
+              deterministic_verification: hasCritic,
+              error_handler_present: !silentSwallow,
+              human_fallback_queue: hasFallback
+            },
+            retrieval_detected: hasRetrieval,
+            raw_sql_or_select_star: hasRawSql,
+            fragile_json_parse: hasFragile,
+            fragility_score: risk,
+            severity: risk >= 70 ? "CRITICAL" : (risk >= 45 ? "HIGH" : (risk >= 20 ? "MODERATE" : "LOW")),
+            hotspots,
+            fix_hints: fixHints
+          });
+        } else if (allowedData.has(ext) && ext === ".jsonl") {
+          let tTotal = 0, tFail = 0, tUnground = 0, tSlow = 0;
+          lines.forEach((ln, idx) => {
+            if (!ln.trim()) return;
+            try {
+              const obj = JSON.parse(ln);
+              if (!obj || typeof obj !== "object") return;
+              if (!("trace_id" in obj || "failure_type" in obj || "latency_ms" in obj || "status" in obj)) return;
+              tTotal++;
+              const ft = String(obj.failure_type || (obj.status === "error" ? "error" : "none")).toLowerCase();
+              const gr = normBool(obj.grounded_in_source ?? true, true);
+              const hd = normBool(obj.handled_gracefully ?? HEALTHY_TYPES.has(ft), true);
+              const lt = parseInt(obj.latency_ms || 0, 10) || 0;
+              if (!HEALTHY_TYPES.has(ft) || !gr) tFail++;
+              if (!gr) tUnground++;
+              if (lt >= 5000) tSlow++;
+              collectedTraces.push(`${obj.trace_id || "SCAN-" + idx},${obj.step_name || "step"},${ft},${gr},${lt},${hd}`);
+            } catch (_e) {}
+          });
+          if (tTotal > 0) {
+            traceFileCount++;
+            const risk = Math.min(100, (tFail > 0 ? 50 : 0) + (tUnground > 0 ? 25 : 0) + (tSlow > 0 ? 15 : 0));
+            inspectedFiles.push({
+              path: rel,
+              file_type: "trace_data",
+              line_count: lines.length,
+              trace_records_found: tTotal,
+              failed_traces: tFail,
+              ungrounded_traces: tUnground,
+              high_latency_traces: tSlow,
+              fragility_score: risk,
+              severity: risk >= 70 ? "CRITICAL" : (risk >= 45 ? "HIGH" : "MODERATE"),
+              hotspots: [`${tFail}/${tTotal} Failed Traces`]
+            });
+          }
+        }
+      }
+
+      inspectedFiles.sort((a, b) => b.fragility_score - a.fragility_score);
+      const stageCandidates = inspectedFiles.filter(f => f.file_type === "code" && (f.llm_call_count > 0 || f.retrieval_detected));
+      const stageCsvLines = ["stage_order,stage_name,input_source,has_json_schema,has_deterministic_check,has_human_fallback"];
+      stageCandidates.slice(0, 12).forEach((f, idx) => {
+        const stem = f.path.split("/").pop().replace(/\.[^.]+$/, "");
+        stageCsvLines.push(`${idx + 1},${stem},${f.retrieval_detected ? "vector_or_sql" : "llm_step"},${f.guards.schema_validation},${f.guards.deterministic_verification},${f.guards.human_fallback_queue}`);
+      });
+
+      const symptoms = [];
+      if (missCritic > 0) symptoms.push("hallucinated_facts_or_numbers");
+      if (missSchema > 0) symptoms.push("breaks_on_edge_cases");
+      if (rawSqlCount > 0) symptoms.push("bad_rag_or_stale_data");
+      if (missTimeout > 0 || swallowCount > 0) symptoms.push("silent_production_errors");
+
+      const scanPayload = {
+        scanned_root: "Browser Local Folder Selection",
+        summary: {
+          files_scanned: codeCount + traceFileCount,
+          total_llm_call_sites: totalLlm,
+          files_missing_schema: missSchema,
+          files_missing_timeouts: missTimeout,
+          files_missing_critic: missCritic,
+          trace_events_parsed: collectedTraces.length
+        },
+        files: inspectedFiles,
+        suggested_inputs: {
+          workflow_name: "Scanned Local AI Pilot",
+          current_stage: "stalled_internal_pilot",
+          failure_symptoms: symptoms,
+          output_validation: missSchema > 0 ? "free_text_or_regex_only" : (missCritic > 0 ? "json_schema_no_critic" : "schema_plus_deterministic_critic"),
+          retrieval_hygiene: rawSqlCount > 0 ? "raw_docs_or_uncleaned_db" : "basic_chunking_stale_sync",
+          human_in_the_loop: "none_all_or_nothing",
+          observability_and_retries: (missTimeout > 0 || swallowCount > 0) ? "console_logs_only" : "traced_bounded_sla_alerted",
+          stages_csv_text: stageCsvLines.length > 1 ? stageCsvLines.join("\n") : "",
+          traces_csv_text: collectedTraces.length > 0
+            ? ["trace_id,step_name,failure_type,grounded_in_source,latency_ms,handled_gracefully", ...collectedTraces].join("\n")
+            : ""
+        }
+      };
+
+      document.getElementById("scanStatusMsg").textContent =
+        `Inspected ${scanPayload.summary.files_scanned} file(s) directly in browser memory (zero uploads).`;
+      renderScanData(scanPayload);
+    }
+
+    function setupCsvUpload(inputId, textareaId) {
+      document.getElementById(inputId).addEventListener("change", async (e) => {
+        const f = e.target.files && e.target.files[0];
+        if (!f) return;
+        document.getElementById(textareaId).value = await f.text();
+      });
+    }
+
+    // Initialization & Mode Detection
+    (async function init() {
+      const savedTheme = localStorage.getItem("varinull_scout3_theme_v2");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+
+      document.getElementById("themeToggleBtn").addEventListener("click", () => {
+        const cur = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", cur);
+        localStorage.setItem("varinull_scout3_theme_v2", cur);
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const isHttp = window.location.protocol === "http:" || window.location.protocol === "https:";
+      const isDemoPath = window.location.pathname.endsWith("/demo");
+      const isDemoQuery = params.get("mode") === "demo";
+
+      currentMode = (isDemoPath || isDemoQuery) ? "demo" : "production";
+
+      const switchLink = document.getElementById("modeSwitchLink");
+      const exitDemoBtn = document.getElementById("exitDemoBtn");
+      const sampleBtn = document.getElementById("scanSampleBtn");
+      if (currentMode === "demo") {
+        const blankHref = window.location.pathname.endsWith("/demo") ? "/" : window.location.pathname;
+        document.getElementById("demoBanner").classList.add("active");
+        switchLink.style.display = "inline-flex";
+        switchLink.textContent = "Switch to Blank Form";
+        switchLink.href = isHttp ? blankHref : "?mode=production";
+        exitDemoBtn.href = isHttp ? blankHref : "?mode=production";
+        sampleBtn.style.display = "inline-flex";
+
+        let demoData = DEMO_PAYLOAD;
+        if (isHttp) {
+          try {
+            const r = await fetch("/api/demo");
+            if (r.ok) {
+              const d = await r.json();
+              if (d.inputs) demoData = { prospect: d.prospect, inputs: d.inputs };
+            }
+          } catch (_e) {}
+        }
+        populateForm(demoData);
+        await runDiagnostic(false);
+      } else {
+        switchLink.style.display = "none";
+        sampleBtn.style.display = "none";
+        // Blank Production Instance: zero pre-filled symptoms or CSVs
+      }
+
+      // Wire events
+      document.getElementById("diagnosticForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        await runDiagnostic(true);
+      });
+
+      document.getElementById("resetFormBtn").addEventListener("click", () => {
+        document.getElementById("diagnosticForm").reset();
+        document.getElementById("traces_csv_text").value = "";
+        document.getElementById("stages_csv_text").value = "";
+        document.getElementById("resultsSection").classList.remove("active");
+      });
+
+      document.getElementById("dlBlankTracesBtn").addEventListener("click", () => {
+        downloadBlob("blank_failure_traces.csv", BLANK_TRACES_CSV, "text/csv;charset=utf-8");
+      });
+      document.getElementById("dlBlankStagesBtn").addEventListener("click", () => {
+        downloadBlob("blank_workflow_stages.csv", BLANK_STAGES_CSV, "text/csv;charset=utf-8");
+      });
+
+      const doExportJson = () => {
+        if (!latestCapsule) return;
+        downloadBlob("varinull-capsule-sprint3.json", JSON.stringify(latestCapsule, null, 2) + "\n", "application/json");
+      };
+      document.getElementById("exportCapsuleBtn").addEventListener("click", doExportJson);
+      document.getElementById("pullExportBtn").addEventListener("click", doExportJson);
+
+      document.getElementById("exportMarkdownBtn").addEventListener("click", () => {
+        if (!latestCapsule) return;
+        downloadBlob("workflow-rescue-blueprint-sprint3.md", buildClientMarkdown(latestCapsule), "text/markdown;charset=utf-8");
+      });
+
+      // Local Scanner events
+      document.getElementById("runLocalScanBtn").addEventListener("click", () => {
+        const p = document.getElementById("localScanPathInput").value.trim();
+        if (!p) {
+          document.getElementById("scanStatusMsg").textContent = "Enter a local directory path or click 'Browse Local Folder'.";
+          return;
+        }
+        triggerServerScan(p);
+      });
+
+      document.getElementById("scanSampleBtn").addEventListener("click", () => {
+        const sampleRel = "fixtures/sample_stalled_pilot";
+        document.getElementById("localScanPathInput").value = sampleRel;
+        triggerServerScan(sampleRel);
+      });
+
+      document.getElementById("browserFolderPicker").addEventListener("change", (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          scanBrowserFileList(e.target.files);
+        }
+      });
+
+      document.querySelectorAll("#scanFilterButtons button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeScanFilter = btn.dataset.filter;
+          renderFilteredScanList();
+        });
+      });
+
+      document.getElementById("applyScanToFormBtn").addEventListener("click", async () => {
+        if (!latestScanData || !latestScanData.suggested_inputs) return;
+        populateForm({ inputs: latestScanData.suggested_inputs });
+        await runDiagnostic(true);
+      });
+
+      setupCsvUpload("tracesCsvFile", "traces_csv_text");
+      setupCsvUpload("stagesCsvFile", "stages_csv_text");
+    })();
+  </script>
+</body>
+</html>
